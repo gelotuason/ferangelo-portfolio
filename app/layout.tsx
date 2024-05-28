@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { poppins } from '@/app/ui/fonts';
-import Header from '@/app/ui/header/header';
+import Nav from '@/app/ui/header/nav';
 
 export const metadata: Metadata = {
   title: "Ferangelo Tuason",
@@ -14,9 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${poppins.className} antialiased`}>
-        <Header />
+        <Nav />
         {children}
       </body>
     </html>

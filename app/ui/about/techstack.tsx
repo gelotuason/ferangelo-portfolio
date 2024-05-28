@@ -9,7 +9,7 @@ import TailwindCSS from '@/public/tailwind-css.png'
 import Firebase from '@/public/firebase.png';
 import Image from 'next/image';
 
-export default function Images() {
+export default function TechstackLogos() {
     return (
         <div className='lg:flex gap-[16px] grid grid-cols-3'>
             <Image

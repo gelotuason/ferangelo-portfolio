@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { DownloadCVResume } from "../ui/about/downloadcv";
-import Images from "../ui/about/images";
+import { DownloadCVResume } from "../ui/about/links";
+import TechstackLogos from "../ui/about/techstack";
 
 export default function About() {
     return (
-        <main className="container">
+        <main className="container p-[16px] grid gap-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 h-[640px]">
                 <section className="mx-auto my-auto hidden lg:block p-[16px]">
                     <Image
@@ -32,7 +32,7 @@ export default function About() {
                         Harness the power of my tech stack and step into the future of web development.</h1>
                 </div>
                 <div className="mt-[64px]">
-                    <Images />
+                    <TechstackLogos />
                 </div>
             </section>
         </main>

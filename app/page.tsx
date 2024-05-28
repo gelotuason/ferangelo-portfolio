@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { LetsTalk } from "./ui/home/letstalk";
-import { SocialLinks } from "./ui/header/social-links";
+import { SocialLinks, LetsTalk } from "./links";
 
 export default function Home() {
   return (
-    <main className="container flex flex-col-reverse md:grid md:grid-cols-2 md:h-[768px]">
+    <main className="container flex flex-col-reverse md:grid md:grid-cols-2 justify-center h-[762px]">
       <section className="grid gap-[16px] content-center justify-center mt-[32px] md:m-0">
         <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl">Ferangelo Tuason</h1>
         <div className="flex items-center gap-[16px] lg:gap-[32px]">
