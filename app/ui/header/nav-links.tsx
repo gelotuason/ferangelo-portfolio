@@ -6,7 +6,6 @@ import clsx from 'clsx';
 
 const links = [
     { name: 'Home', href: '/', },
-    { name: 'About', href: '/about', },
     { name: 'Projects', href: '/portfolio', },
     { name: 'Contact', href: '/contact', },
 ];
@@ -41,7 +40,7 @@ export function DesktopNavLinks({ className }: { className: string }) {
 export function MobileNavLinks() {
     const pathname = usePathname();
     return (
-        <nav className='flex flex-col basis-full items-center gap-[8px]'>
+        <nav className='flex flex-col basis-full items-center gap-[8px] mb-[16px]'>
             {
                 links.map((link) => {
                     return (
