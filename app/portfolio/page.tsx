@@ -1,7 +1,7 @@
 import Image from "next/image";
 import EMD from '@/public/emp-management-dashboard.png';
 import SMA from '@/public/social-media-app.png';
-import { Links } from "../ui/about/links";
+import { Links } from "../ui/portfolio/links";
 
 export default function Portfolio() {
     return (
