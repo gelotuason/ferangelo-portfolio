@@ -4,7 +4,7 @@ import TechstackLogos from "./techstack";
 
 export default function Home() {
   return (
-    <main className="container flex flex-col-reverse lg:grid lg:grid-cols-2 justify-center lg:h-5/6 gap-[32px] p-[32px]">
+    <main className="flex flex-col-reverse lg:grid lg:grid-cols-2 justify-center lg:h-5/6 gap-[32px] p-[32px]">
       <section className="grid gap-[16px] content-center justify-center mt-[32px] md:m-0">
         <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl">Ferangelo Tuason</h1>
         <div className="flex items-center gap-[16px] lg:gap-[32px]">
