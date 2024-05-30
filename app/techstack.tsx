@@ -27,9 +27,10 @@ export default function TechstackLogos() {
     return (
         <figure className='md:flex gap-2 md:gap-8 lg:gap-5 grid grid-cols-5'>
             {
-                imageProperties.map((property) => {
+                imageProperties.map((property, index) => {
                     return (
                         <Image
+                            key={index}
                             src={property.src}
                             width={property.width}
                             height={property.height}
@@ -39,7 +40,6 @@ export default function TechstackLogos() {
                         >
                         </Image>
                     )
-
                 })
             }
         </figure>
