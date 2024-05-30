@@ -5,3 +5,9 @@
 body {
     background-color: #f8f7f3;
 }
+
+.text-outline {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  }

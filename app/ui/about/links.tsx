@@ -1,10 +1,17 @@
-import { ArrowDownTrayIcon } from '@heroicons/react/24/solid';
+import Link from "next/link";
 
-export function DownloadCVResume() {
+interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    href: string;
+    children: React.ReactNode;
+}
+
+export function Links({ href, children }: LinkProps) {
     return (
-        <a href='./Ferangelo Tuason Resume.pdf' download className="flex gap-[8px] mt-[32px] bg-blue-700 w-[180px] items-center justify-center p-[16px] rounded-xl text-white shadow-lg shadow-blue-700/50">
-            <ArrowDownTrayIcon className="w-6" />
-            <span>Download CV</span>
-        </a>
+        <Link
+            href={href}
+            className="px-[16px] py-[8px] rounded-xl bg-blue-700 text-white shadow-lg hover:shadow-blue-700/50"
+        >
+            {children}
+        </Link>
     )
 } 

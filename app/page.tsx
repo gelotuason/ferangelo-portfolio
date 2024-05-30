@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { LetsTalk } from "./links";
+import { LetsTalk, DownloadCVResume } from "./links";
 import TechstackLogos from "./techstack";
 
 export default function Home() {
@@ -19,7 +19,10 @@ export default function Home() {
           <hr className="w-6 rotate-90 border-black" />
           <TechstackLogos />
         </div>
-        <LetsTalk />
+        <div className="flex flex-col lg:flex-row lg:gap-[16px]">
+          <DownloadCVResume />
+          <LetsTalk />
+        </div>
       </section>
       <Image
         src="/my-pic.jpg"
