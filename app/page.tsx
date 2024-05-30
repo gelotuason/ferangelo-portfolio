@@ -27,6 +27,7 @@ export default function Home() {
         height={500}
         className='animate-border-radius border-4 border-double border-black my-auto mx-auto'
         alt='my photo'
+        priority
       />
     </main>
   );
