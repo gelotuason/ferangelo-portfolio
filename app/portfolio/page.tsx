@@ -5,7 +5,7 @@ import { Links } from "../ui/portfolio/links";
 
 export default function Portfolio() {
     return (
-        <main className="container max-w-[1160px] p-[32px] grid gap-10 mx-auto">
+        <main className="max-w-[1160px] p-[32px] grid gap-10 mx-auto">
             <div className="flex flex-col gap-0">
                 <p className="text-center text-gray-500 lg:text-lg">PROJECTS</p>
                 <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl">My Recent Work</h1>
