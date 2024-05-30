@@ -14,7 +14,7 @@ export default function Nav() {
     }
 
     return (
-        <header className='container flex flex-wrap items-center gap-[16px] px-[24px] py-[8px] relative top-2 border-b-2 border-[#f2f0eb] justify-between'>
+        <header className='container flex flex-wrap items-center gap-[16px] px-[24px] py-[8px] relative top-0 border-b-2 border-[#f2f0eb] justify-between'>
             <div className="flex items-center gap-[24px]">
                 <Link href={'/'}>
                     <h1 className="font-bold text-5xl">Gelo<span className="text-[#fea82f]">.</span></h1>
