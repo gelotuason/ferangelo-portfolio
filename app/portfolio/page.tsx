@@ -12,7 +12,7 @@ export default function Portfolio() {
             </div>
 
             <figure className="flex lg:flex-row flex-col">
-                <h1 className="my-auto text-6xl text-outline font-mono text-center lg:text-start">02</h1>
+                <h1 className="my-auto text-6xl text-outline font-mono text-center lg:text-start">01</h1>
                 <Image
                     src={SMA}
                     width={500}
@@ -39,7 +39,7 @@ export default function Portfolio() {
                 </figcaption>
             </figure>
             <figure className="flex lg:flex-row flex-col">
-                <h1 className="my-auto text-6xl text-outline font-mono text-center lg:text-start">01</h1>
+                <h1 className="my-auto text-6xl text-outline font-mono text-center lg:text-start">02</h1>
                 <Image
                     src={EMD}
                     width={500}
