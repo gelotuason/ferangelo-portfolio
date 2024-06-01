@@ -5,7 +5,7 @@ import { Links } from "../ui/portfolio/links";
 
 export default function Portfolio() {
     return (
-        <main className="max-w-[1160px] p-[32px] grid gap-10 mx-auto">
+        <main className="max-w-[1280px] p-[32px] grid gap-10 mx-auto">
             <div className="flex flex-col gap-0">
                 <p className="text-center text-gray-500 lg:text-lg">PROJECTS</p>
                 <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl">My Recent Work</h1>
@@ -26,10 +26,13 @@ export default function Portfolio() {
                         A user-friendly social media web application designed to connect people, share experiences, and foster community engagement.
                         With a sleek design, it enables users to effortlessly post updates, and discover new content.
                     </p>
-                    <div className="font-semibold w-full flex justify-evenly">
-                        <p>React</p> |
-                        <p>Material UI</p> |
-                        <p>Firebase</p> |
+                    <div className="font-semibold w-full flex flex-wrap justify-evenly">
+                        <p>React</p> 
+                        <p>|</p>
+                        <p>Material UI</p> 
+                        <p>|</p>
+                        <p>Firebase</p>
+                        <p>|</p>
                         <p>Yup</p>
                     </div>
                     <div className="flex flex-col gap-4 w-full lg:flex-row justify-center">
@@ -50,9 +53,11 @@ export default function Portfolio() {
                 <figcaption className="flex flex-col justify-evenly p-[16px] items-center text-center gap-[32px] lg:gap-0">
                     <h1 className="font-bold text-lg">Employee Management Dashboard</h1>
                     <p className="text-gray-500">A web application with a focus on simplicity, making it easy for user to manage and monitor employees.</p>
-                    <div className="font-semibold w-full flex justify-evenly">
-                        <p>React</p> |
-                        <p>Tailwind CSS</p> |
+                    <div className="font-semibold w-full flex flex-wrap justify-evenly">
+                        <p>React</p>
+                        <p>|</p>
+                        <p>Tailwind CSS</p>
+                        <p>|</p>
                         <p>Firebase</p>
                     </div>
                     <div className="flex flex-col gap-4 w-full lg:flex-row justify-center">
