@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { poppins } from '@/app/ui/fonts';
 import Nav from '@/app/ui/header/nav';
+import Footer from "./footer";
 import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={`${poppins.className} antialiased h-screen container`}>
         <Nav />
         {children}
+        <Footer />
         <Toaster />
       </body>
     </html>
