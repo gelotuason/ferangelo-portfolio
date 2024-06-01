@@ -3,6 +3,7 @@
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import { sendEmail } from "@/app/contact/actions";
 import { useState } from "react";
+import toast from 'react-hot-toast';
 
 export default function ContactForm() {
 
@@ -31,7 +32,11 @@ export default function ContactForm() {
     };
 
     const handleSubmit = async (formData: FormData) => {
-        await sendEmail(formData);
+        const result = await sendEmail(formData);
+
+        if (result == false) return toast.error('Something went wrong, please try again. 😔');
+
+        toast.success('Email sent successfully! 👏');
         setUserInput(initialState);
     };
 
@@ -39,6 +44,7 @@ export default function ContactForm() {
         <form
             action={async (formData) => handleSubmit(formData)}
         >
+
             <div className="mt-8">
                 <div className="grid grid-cols-1 gap-6">
                     <label className="block">
@@ -93,5 +99,6 @@ export default function ContactForm() {
                 </div>
             </div>
         </form>
+
     )
 }
