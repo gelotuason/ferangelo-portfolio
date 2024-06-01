@@ -4,7 +4,7 @@ import ContactForm from "../ui/contact/contact-form";
 export default function Contact() {
 
     return (
-        <main className="grid grid-cols-1 lg:grid-cols-2 h-5/6">
+        <main className="grid grid-cols-1 lg:grid-cols-2 lg:h-5/6">
             <section className="flex flex-col lg:mx-auto justify-evenly h-svh lg:h-full tracking-widest">
                 <h1 className="font-bold text-6xl">Got a project?</h1>
                 <h2 className="flex text-5xl font-medium gap-4">
