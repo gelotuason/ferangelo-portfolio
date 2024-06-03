@@ -29,9 +29,9 @@ export function LetsTalk() {
 
 export function DownloadCVResume() {
     return (
-        <a href='./Ferangelo Tuason Resume.pdf' download className="flex gap-[8px] mt-[32px] border border-blue-700 w-full lg:w-[180px] items-center justify-center p-[16px] rounded-xl text-blue-700 shadow-lg hover:shadow-blue-700/50">
+        <Link href='https://drive.google.com/file/d/1j7TuFjjHOkt0MeX4452L5I7alUGf9opP/view' target='_blank' className="flex gap-[8px] mt-[32px] border border-blue-700 w-full lg:w-[180px] items-center justify-center p-[16px] rounded-xl text-blue-700 shadow-lg hover:shadow-blue-700/50">
             <span>Download CV</span>
             <ArrowDownTrayIcon className="w-6" />
-        </a>
+        </Link>
     )
 } 
