@@ -2,8 +2,7 @@
 
 import { getData } from "@/app/utils/firebase";
 import TechstackLogos from "@/app/techstack";
-import { DownloadCVResume } from "@/app/links";
-import { LetsTalk } from "@/app/links";
+import { DownloadCVResume, LetsTalk } from "./links";
 import { useEffect, useState } from "react";
 
 export default function About() {
@@ -28,7 +27,7 @@ export default function About() {
         const fetchData = async () => {
             try {
                 const result = await getData();
-                
+
                 if (result) {
                     const parsedResult = JSON.parse(result);
                     setData({

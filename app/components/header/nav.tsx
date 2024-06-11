@@ -4,7 +4,7 @@ import { DesktopNavLinks, MobileNavLinks } from "./nav-links"
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import { SocialLinks } from "@/app/links";
+import { SocialLinks } from "@/app/components/header/social-links";
 import { getData } from "@/app/utils/firebase";
 
 export default function Nav() {
