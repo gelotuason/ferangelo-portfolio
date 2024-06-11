@@ -11,13 +11,15 @@ export default function About() {
     interface Data {
         name: string,
         title: string,
-        description: string
+        description: string,
+        cv_url: string
     }
 
     const initialState = {
         name: '',
         title: '',
-        description: ''
+        description: '',
+        cv_url: ''
     }
 
     const [data, setData] = useState<Data>(initialState);
@@ -28,7 +30,14 @@ export default function About() {
 
             if (result) {
                 const parsedResult = JSON.parse(result);
-                setData({ name: parsedResult.name, title: parsedResult.title, description: parsedResult.description });
+                setData({
+                    name: parsedResult.name,
+                    title: parsedResult.title,
+                    description: parsedResult.description,
+                    cv_url: parsedResult.cv_url
+                });
+            } else {
+                console.log('Please refresh the page.');
             }
         }
 
@@ -49,7 +58,7 @@ export default function About() {
                 <TechstackLogos />
             </div>
             <div className="flex flex-col lg:flex-row lg:gap-[16px]">
-                <DownloadCVResume />
+                <DownloadCVResume cv_url={data.cv_url} />
                 <LetsTalk />
             </div>
         </>
