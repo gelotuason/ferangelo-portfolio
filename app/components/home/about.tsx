@@ -26,18 +26,20 @@ export default function About() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const result = await getData();
-
-            if (result) {
-                const parsedResult = JSON.parse(result);
-                setData({
-                    name: parsedResult.name,
-                    title: parsedResult.title,
-                    description: parsedResult.description,
-                    cv_url: parsedResult.cv_url
-                });
-            } else {
-                console.log('Please refresh the page.');
+            try {
+                const result = await getData();
+                
+                if (result) {
+                    const parsedResult = JSON.parse(result);
+                    setData({
+                        name: parsedResult.name,
+                        title: parsedResult.title,
+                        description: parsedResult.description,
+                        cv_url: parsedResult.cv_url
+                    });
+                }
+            } catch (error) {
+                console.log(error);
             }
         }
 
