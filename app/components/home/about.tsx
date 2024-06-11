@@ -34,6 +34,7 @@ export default function About() {
 
                 if (result) {
                     const parsedResult = JSON.parse(result);
+
                     setData({
                         name: parsedResult.name,
                         title: parsedResult.title,
@@ -45,12 +46,13 @@ export default function About() {
 
                 setLoading(false);
             } catch (error) {
-                console.log(error);
+                setLoading(true);
+                alert(`Something didn't work properly, please refresh the page.`);
             }
         }
 
         fetchData();
-    }, [data]);
+    }, []);
 
     if (loading) {
         return (<h1>Loading...</h1>)
@@ -80,6 +82,7 @@ export default function About() {
                     height={500}
                     className='animate-border-radius border-4 border-double border-black my-auto mx-auto'
                     alt='My Photo'
+                    priority
                 />
             </>
         )
