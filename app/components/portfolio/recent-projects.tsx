@@ -7,10 +7,11 @@ interface RecentProjectsProps {
     source_code_url: string,
     live_url: string,
     image_url: string,
+    image_alt: string,
     tech_stack: []
 }
 
-export default function RecentProjects({ title, description, source_code_url, live_url, image_url, tech_stack }: RecentProjectsProps) {
+export default function RecentProjects({ title, description, source_code_url, live_url, image_url, image_alt, tech_stack }: RecentProjectsProps) {
 
     return (
         <figure className="flex lg:flex-row flex-col">
@@ -18,7 +19,7 @@ export default function RecentProjects({ title, description, source_code_url, li
                 src={image_url}
                 width={500}
                 height={500}
-                alt="EMD Project Mockup"
+                alt={image_alt}
                 className="my-auto mx-auto"
             />
             <figcaption className="flex flex-col justify-evenly p-[16px] items-center text-center gap-[32px] lg:gap-0">

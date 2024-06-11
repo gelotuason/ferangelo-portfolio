@@ -32,7 +32,6 @@ export default function Portfolio() {
                 <p className="text-center text-gray-500 lg:text-lg">PROJECTS</p>
                 <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl">My Recent Projects</h1>
             </div>
-
             {
                 projectsData.map((project: any, index: number) => (
                     <RecentProjects
@@ -42,6 +41,7 @@ export default function Portfolio() {
                         source_code_url={project.source_code_url}
                         live_url={project.live_url}
                         image_url={project.image_url}
+                        image_alt={project.image_alt}
                         tech_stack={project.tech_stack}
                     />
                 ))
