@@ -1,5 +1,5 @@
 import { EnvelopeIcon, PhoneIcon, ArrowTrendingUpIcon } from "@heroicons/react/24/solid";
-import ContactForm from "../ui/contact/contact-form";
+import ContactForm from "../components/contact/contact-form";
 
 export default function Contact() {
 

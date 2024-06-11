@@ -3,6 +3,7 @@ import { LetsTalk, DownloadCVResume } from "./links";
 import TechstackLogos from "./techstack";
 
 export default function Home() {
+
   return (
     <main className="flex flex-col-reverse lg:grid lg:grid-cols-2 justify-center lg:h-5/6 gap-[32px] p-[32px]">
       <section className="grid gap-[16px] content-center justify-center mt-[32px] md:m-0">

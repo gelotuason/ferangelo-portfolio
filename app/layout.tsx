@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { poppins } from '@/app/ui/fonts';
-import Nav from '@/app/ui/header/nav';
+import { poppins } from '@/app/components/fonts';
+import Nav from '@/app/components/header/nav';
 import Footer from "./footer";
 import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: "Ferangelo Tuason",
-  description: "Portfolio",
+  description: "Portfolio | Full Stack Developer | HTML, CSS, JavaScript, ReactJS, NextJS, Firebase, Tailwind, Material-UI, Git, GitHub, Web Development",
 };
 
 export default function RootLayout({

@@ -1,7 +1,7 @@
 'use client'
 
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
-import { sendEmail } from "@/app/contact/actions";
+import { sendEmail } from "@/app/utils/email";
 import { useState } from "react";
 import toast from 'react-hot-toast';
 
