@@ -1,8 +1,9 @@
-import { doc, getDoc, getFirestore } from "firebase/firestore";
+import { doc, getDoc, getFirestore, collection, getDocs } from "firebase/firestore";
 import firebaseApp from "@/config/firebaseConfig";
 
+const db = getFirestore(firebaseApp);
+
 export async function getData() {
-    const db = getFirestore(firebaseApp);
     const docRef = doc(db, "about", "HAo7aHsWb8JWeqyrCJ9v");
     const docSnap = await getDoc(docRef);
 
@@ -11,7 +12,17 @@ export async function getData() {
 
         return JSON.stringify(data);
     } else {
-        // docSnap.data() will be undefined in this case
         console.log("No such document!");
     }
+}
+
+export async function getProjectsData() {
+    const projectsData: any[] = [];
+
+    const querySnapshot = await getDocs(collection(db, "projects"));
+    querySnapshot.forEach((doc) => {
+        projectsData.push(doc.data());
+    });
+
+    return JSON.stringify(projectsData);
 }
