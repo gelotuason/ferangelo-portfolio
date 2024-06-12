@@ -92,7 +92,7 @@ export default function ContactForm() {
                         >
                         </textarea>
                     </label>
-                    <button type="submit" className="flex gap-2 bg-blue-700 text-white px-[16px] py-[8px] w-[100px] rounded-lg items-center shadow-lg hover:shadow-blue-700/50 active:">
+                    <button type="submit" className="flex gap-2 bg-blue-700 text-white px-[16px] py-[8px] w-full md:w-[100px] justify-center rounded-lg items-center shadow-lg hover:shadow-blue-700/50 active:">
                         <span>Send</span>
                         <PaperAirplaneIcon className="w-6" />
                     </button>

@@ -2,13 +2,14 @@ import Image from "next/image";
 import { Links } from "./links";
 
 interface RecentProjectsProps {
+    key: number,
     title: string,
     description: string,
     source_code_url: string,
     live_url: string,
     image_url: string,
     image_alt: string,
-    tech_stack: []
+    tech_stack: [],
 }
 
 export default function RecentProjects({ title, description, source_code_url, live_url, image_url, image_alt, tech_stack }: RecentProjectsProps) {
@@ -27,10 +28,10 @@ export default function RecentProjects({ title, description, source_code_url, li
                 <p className="text-gray-500">
                     {description}
                 </p>
-                <div className="font-semibold w-full flex flex-wrap justify-evenly">
+                <div className="font-semibold w-full flex gap-[8px] flex-wrap justify-center">
                     {
-                        tech_stack.map((tech: any, index: any) => (
-                            <p key={index}>{tech}</p>
+                        tech_stack.map((tech: any, index: number) => (
+                            <p className="border px-[16px] py-[8px] rounded-full text-blue-700 bg-blue-700/5" key={index}>{tech}</p>
                         ))
                     }
                 </div>

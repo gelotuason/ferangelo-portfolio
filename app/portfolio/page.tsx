@@ -33,27 +33,30 @@ export default function Portfolio() {
 
     if (loading) {
         return (
-            <h1 className="h-5/6 p-[32px]">Loading...</h1>
+            <h1 className="h-full p-[32px]">Loading...</h1>
         )
     } else {
         return (
-            <main className="max-w-[1280px] p-[32px] grid gap-10 mx-auto">
+            <main className="max-w-[1280px] p-[32px] h-max grid gap-10 mx-auto">
                 <div className="flex flex-col gap-0">
                     <p className="text-center text-gray-500 lg:text-lg">PROJECTS</p>
-                    <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl">My Recent Projects</h1>
+                    <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl">My Recent Works</h1>
                 </div>
                 {
                     projectsData.map((project: any, index: number) => (
-                        <RecentProjects
-                            key={index}
-                            title={project.title}
-                            description={project.description}
-                            source_code_url={project.source_code_url}
-                            live_url={project.live_url}
-                            image_url={project.image_url}
-                            image_alt={project.image_alt}
-                            tech_stack={project.tech_stack}
-                        />
+                        <>
+                            <RecentProjects
+                                key={index}
+                                title={project.title}
+                                description={project.description}
+                                source_code_url={project.source_code_url}
+                                live_url={project.live_url}
+                                image_url={project.image_url}
+                                image_alt={project.image_alt}
+                                tech_stack={project.tech_stack}
+                            />
+                        </>
+
                     ))
                 }
             </main>

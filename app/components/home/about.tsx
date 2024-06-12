@@ -59,13 +59,13 @@ export default function About() {
     } else {
         return (
             <>
-                <section className="grid gap-[16px] content-center justify-center mt-[32px] md:m-0">
+                <section className="grid gap-[16px] content-center justify-center md:m-0">
                     <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl">{data.name}</h1>
                     <div className="flex items-center gap-[16px] lg:gap-[32px]">
-                        <hr className="w-[32px] lg:w-[86px] border border-black" />
-                        <p className="text-lg md:text-2xl lg:text-3xl font-light">{data.title} 🧑‍💻</p>
+                        <hr className="w-[16px] md:w-[32px] lg:w-[86px] border border-black" />
+                        <p className="md:text-2xl lg:text-3xl font-light">{data.title} 🧑‍💻</p>
                     </div>
-                    <p className="text-gray-500 break-normal">{data.description}</p>
+                    <p className="text-gray-500 text-sm md:text-base break-normal">{data.description}</p>
                     <div className="flex justify-between items-center h-24">
                         <p className="font-semibold">Tech Stacks</p>
                         <hr className="w-6 rotate-90 border-black" />
@@ -80,7 +80,7 @@ export default function About() {
                     src={data.my_photo_url}
                     width={500}
                     height={500}
-                    className='animate-border-radius border-4 border-double border-black my-auto mx-auto'
+                    className='animate-border-radius border-4 border-double border-black my-auto mx-auto hidden md:block'
                     alt='My Photo'
                     priority
                 />
