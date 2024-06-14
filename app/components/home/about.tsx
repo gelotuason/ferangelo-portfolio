@@ -6,7 +6,7 @@ import { DownloadCVResume, LetsTalk } from "./links";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-export default function About() {
+export function About() {
 
     interface Data {
         name: string,
@@ -55,11 +55,11 @@ export default function About() {
     }, []);
 
     if (loading) {
-        return (<h1>Loading...</h1>)
+        return (<h1 className="mt-24">Loading...</h1>)
     } else {
         return (
             <>
-                <section className="grid gap-[16px] content-center justify-center md:m-0">
+                <section className="grid gap-[16px] content-center justify-center">
                     <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl">{data.name}</h1>
                     <div className="flex items-center gap-[16px] lg:gap-[32px]">
                         <hr className="w-[16px] md:w-[32px] lg:w-[86px] border border-black" />

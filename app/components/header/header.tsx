@@ -47,7 +47,7 @@ export function Header() {
     })
 
     return (
-        <header className="container absolute top-0 justify-between flex flex-wrap items-center gap-[16px] px-[24px] py-[8px] border-b-2 border-[#f2f0eb]">
+        <header className="container absolute top-0 justify-between flex flex-wrap items-center gap-[16px] px-[24px] py-[8px] border-b-2 bg-inherit border-[#f2f0eb]">
             <div className="flex items-center gap-[24px]">
                 <Link href={'/'}>
                     <h1 className="font-bold text-5xl">Gelo<span className="text-[#fea82f]">.</span></h1>

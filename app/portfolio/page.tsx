@@ -33,11 +33,11 @@ export default function Portfolio() {
 
     if (loading) {
         return (
-            <h1 className="h-full p-[32px]">Loading...</h1>
+            <h1 className="mt-24 h-full">Loading...</h1>
         )
     } else {
         return (
-            <main className="max-w-[1280px] p-[32px] h-max grid gap-10 mx-auto">
+            <main className="max-w-[1280px] p-[32px] mt-20 max-h-max grid gap-10 mx-auto">
                 <div className="flex flex-col gap-0">
                     <p className="text-center text-gray-500 lg:text-lg">PROJECTS</p>
                     <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl">My Recent Works</h1>
@@ -56,7 +56,6 @@ export default function Portfolio() {
                                 tech_stack={project.tech_stack}
                             />
                         </>
-
                     ))
                 }
             </main>

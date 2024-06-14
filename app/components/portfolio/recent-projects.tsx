@@ -22,6 +22,7 @@ export default function RecentProjects({ title, description, source_code_url, li
                 height={500}
                 alt={image_alt}
                 className="my-auto mx-auto"
+                priority
             />
             <figcaption className="flex flex-col justify-evenly p-[16px] items-center text-center gap-[32px] lg:gap-0">
                 <h1 className="font-bold text-lg">{title}</h1>
