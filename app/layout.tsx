@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { poppins } from '@/app/components/fonts';
-import Nav from '@/app/components/header/nav';
+import { Header } from "./components/header/header";
 import Footer from "./footer";
 import { Toaster } from 'react-hot-toast';
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${poppins.className} antialiased h-lvh container`}>
-        <Nav />
+        <Header />
         {children}
         <Footer />
         <Toaster />
